@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #ffebee;
+  color: #c62828;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.letter {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b71c1c;
+}
+
+.hidden {
+  display: none;
+}
+
+#response {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #c62828;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>To My Dearest Wifey,</h1>
+    <p class="letter">
+      You are the love of my life, my best friend, and my everything. Every day with you feels like a blessing, and I can't imagine my life without you. This Valentine's Day, I want to ask you something special...
+    </p>
+    <div class="gallery">
+      <img src="photo1.jpeg" alt="Our Memory">
+      <img src="photo2.jpeg" alt="Our Memory">
+      <!-- Add more images here -->
+    </div>
+    <button id="valentineButton">Will You Be My Valentine?</button>
+    <p id="response" class="hidden">Yay! I love you so much! ❤️</p>
+  </div>
+
+  <script>
+    document.getElementById('valentineButton').addEventListener('click', function() {
+  document.getElementById('response').classList.remove('hidden');
+  this.textContent = "You Said Yes! ❤️";
+});
+  </script>
+</body>
+</html>
